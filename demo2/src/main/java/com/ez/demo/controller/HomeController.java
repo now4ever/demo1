@@ -1,4 +1,4 @@
-package com.ez.demo.controller;
+﻿package com.ez.demo.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,9 +12,16 @@ public class HomeController {
         return "index";
     }
 	
+
 	@RequestMapping("/test1")
     public String test1() { 
 		System.out.println("test1 page!");
         return "test1";
+
+	@RequestMapping("/pd/pdList")
+    public String pdList() { 
+		System.out.println("pdList page!");
+        return "pd/pdList";
+
     }
 }
