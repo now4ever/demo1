@@ -17,7 +17,8 @@ public class HomeController {
     public String test1() { 
 		System.out.println("test1 page!");
         return "test1";
-
+	}
+	
 	@RequestMapping("/pd/pdList")
     public String pdList() { 
 		System.out.println("pdList page!");
